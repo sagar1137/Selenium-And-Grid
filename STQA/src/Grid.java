@@ -20,7 +20,7 @@ public class Grid {
 	String TODODesp="Todo Application for selenium";
 	
 	Grid() throws MalformedURLException{
-		
+		//Grid part starts from here
 		DesiredCapabilities cap=new DesiredCapabilities();
 		cap.setBrowserName("chrome");
 		
@@ -30,8 +30,11 @@ public class Grid {
 		String url="http://192.168.43.123:4444/wd/hub";
 		 driver=new RemoteWebDriver(new URL(url),op);
 		 driver.manage().window().maximize();
+		// ends here
+		
 		
 	}
+	//remaining is same as simple selenium
 	
 	void getWebsite()
 	{
